@@ -174,7 +174,7 @@ pub struct Dungeon<'a> {
 
 impl<'a> Dungeon<'a> {
     const EXTRA_CONNECTOR_CHANCE: i32 = 20;
-    const WINDING_PERCENT: i32 = 0;
+    const WINDING_PERCENT: i32 = 30;
     const ROOM_EXTRA_SIZE: i32 = 0;
 
     pub fn new(stage: &'a mut Stage) -> Self {

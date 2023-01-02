@@ -7,10 +7,10 @@ use crate::dungeon::Dungeon;
 mod dungeon;
 
 fn main() {
-    let mut stage = Stage::new(151, 35);
+    let mut stage = Stage::new(301, 71);
     println!("{stage}");
     println!();
     let mut dungeon_generator = Dungeon::new(&mut stage);
     dungeon_generator.generate();
-    println!("{stage}");
+    // println!("{stage}");
 }
