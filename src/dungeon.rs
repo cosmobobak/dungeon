@@ -163,13 +163,13 @@ impl Vector {
 static CARDINALS: [Vector; 4] = [Vector(0, -1), Vector(1, 0), Vector(0, 1), Vector(-1, 0)];
 
 pub struct Dungeon<'a> {
-    pub n_room_tries: u32,
+    n_room_tries: u32,
     rooms: Vec<Rectangle>,
     /// For each open position in the dungeon, the index of the connected region
     /// that that position is a part of.
-    pub regions: HashMap<Vector, i32>,
-    pub curr_region: i32,
-    pub stage: &'a mut Stage,
+    regions: HashMap<Vector, i32>,
+    curr_region: i32,
+    stage: &'a mut Stage,
 }
 
 impl<'a> Dungeon<'a> {
